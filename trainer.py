@@ -20,7 +20,7 @@ import numpy as np
 import os
 
 INIT_LR = 1e-4
-EPOCHS = 9
+EPOCHS = 15
 BS = 32
 
 print("Loading images...")
