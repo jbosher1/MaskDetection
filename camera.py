@@ -61,8 +61,9 @@ cam = cv2.VideoCapture(0)
 time.sleep(2.0)
 while True:
 	ret_val, img  = cam.read()
-	img = cv2.flip(img, 1)
-	img = imutils.resize(img, width=400)
+	#img = cv2.flip(img, 1)
+	img = imutils.resize(img, width=500)
+	#img = cv2.detailEnhance(img, 10, 0.15)
 
 	(locs, preds) = predict_mask(img, fn, maskNet)
 
