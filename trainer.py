@@ -17,7 +17,6 @@ from sklearn.metrics import classification_report
 from imutils import paths
 import matplotlib.pyplot as plt
 import numpy as np
-import argparse
 import os
 
 INIT_LR = 1e-4
