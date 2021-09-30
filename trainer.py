@@ -91,7 +91,7 @@ prediction = model.predict(testX, batch_size=BS)
 
 prediction = np.argmax(prediction, axis=1)
 
-print(classification_report(testY.argmax(axis=1),predictions,target_names=lb.classes_))
+print(classification_report(testY.argmax(axis=1),prediction,target_names=lb.classes_))
 model.save("mask_detector.model", save_formate="h5")
 
 N = EPOCHS
